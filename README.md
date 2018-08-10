@@ -1,5 +1,5 @@
 # Matrix related computational methods implemented functionally
-This repository contains source files for a program designed to perform the following computations:
+This repository contains source files for a program designed to perform the following computations:<br>
 Markup : * Solving SLE using Gaussian elemination
          * Solving SLE using Gaussian elemination with leading element
          * Solving SLE using successive over-relaxation
