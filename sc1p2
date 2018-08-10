@@ -1,0 +1,23 @@
+#!/bin/bash
+echo -e "X = $1 | M = 6 | N = 100"
+echo Solving with Gauss...
+./generate 100 $1 | ./mtxprog 0
+echo -e "\n"
+echo Solving with Gauss LE...
+./generate 100 $1 | ./mtxprog 1
+echo -e "\n"
+echo Computing Gauss determinant...
+./generate 100 $1 | ./mtxprog 2
+echo -e "\n"
+echo Computing invert matrix...
+./generate 100 $1 | ./mtxprog 4 > mtx/inv.mtx
+echo Written to mtx/inv.mtx
+echo -e "\n"
+echo Computing matrix condition number...
+./generate 100 $1 | ./mtxprog 5
+echo -e "\n"
+
+
+
+
+

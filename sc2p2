@@ -1,0 +1,6 @@
+#!/bin/bash
+echo -e "X = $1 | M = 6 | N = 100 | OMEGA = $2 | EPSILON = $3"
+echo Solving with Successive Over-Relaxation...
+(./generate 100 $1 && echo $2 $3) | ./mtxprog 3
+echo -e "\n"
+

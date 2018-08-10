@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -e "OMEGA = $1 | EPSILON = $2"
+echo Solving with Successive Over-Relaxation...
+echo 1:
+(cat mtx/1.mtx && echo $1 $2) | ./mtxprog 3
+echo 2:
+(cat mtx/2.mtx && echo $1 $2) | ./mtxprog 3
+echo 3:
+(cat mtx/3.mtx && echo $1 $2) | ./mtxprog 3
+echo Symmetric positive-definite SLE:
+(cat mtx/sp.mtx && echo $1 $2) | ./mtxprog 3
+echo -e "\n"

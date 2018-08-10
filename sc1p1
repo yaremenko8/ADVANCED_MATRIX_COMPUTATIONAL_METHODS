@@ -1,0 +1,44 @@
+#!/bin/bash
+echo Solving with Gauss...
+echo 1:
+./mtxprog 0 < mtx/1.mtx
+echo 2:
+./mtxprog 0 < mtx/2.mtx
+echo 3:
+./mtxprog 0 < mtx/3.mtx
+echo -e "\n"
+echo Solving with Gauss LE...
+echo 1:
+./mtxprog 1 < mtx/1.mtx
+echo 2:
+./mtxprog 1 < mtx/2.mtx
+echo 3:
+./mtxprog 1 < mtx/3.mtx
+echo -e "\n"
+echo Computing Gauss determinant...
+echo 1:
+./mtxprog 2 < mtx/1.mtx
+echo 2:
+./mtxprog 2 < mtx/2.mtx
+echo 3:
+./mtxprog 2 < mtx/3.mtx
+echo -e "\n"
+echo Computing invert matrix...
+echo 1:
+./mtxprog 4 < mtx/1.mtx
+echo 2:
+./mtxprog 4 < mtx/2.mtx
+echo 3:
+./mtxprog 4 < mtx/3.mtx
+echo -e "\n"
+echo Computing matrix condition number...
+echo 1:
+./mtxprog 5 < mtx/1.mtx
+echo 2:
+./mtxprog 5 < mtx/2.mtx
+echo 3:
+./mtxprog 5 < mtx/3.mtx
+
+
+
+
